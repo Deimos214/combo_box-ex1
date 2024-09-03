@@ -1,6 +1,6 @@
 ﻿namespace combo_box_ex1
 {
-    partial class Form1
+    partial class countCentro
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -34,24 +34,24 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.cboEstados = new System.Windows.Forms.ComboBox();
+            this.cboNorte = new System.Windows.Forms.ComboBox();
+            this.cboNordeste = new System.Windows.Forms.ComboBox();
+            this.cboCentro = new System.Windows.Forms.ComboBox();
+            this.cboSudeste = new System.Windows.Forms.ComboBox();
+            this.cboSul = new System.Windows.Forms.ComboBox();
+            this.btnRemoverAdd = new System.Windows.Forms.Button();
+            this.btnRemoverNorte = new System.Windows.Forms.Button();
+            this.btnRemoverNordeste = new System.Windows.Forms.Button();
+            this.btnRemoverCentro = new System.Windows.Forms.Button();
+            this.btnRemoverSudeste = new System.Windows.Forms.Button();
+            this.btnRemoverSul = new System.Windows.Forms.Button();
+            this.countEstados = new System.Windows.Forms.Label();
+            this.countNorte = new System.Windows.Forms.Label();
+            this.countNordeste = new System.Windows.Forms.Label();
+            this.countCentroOeste = new System.Windows.Forms.Label();
+            this.countSudeste = new System.Windows.Forms.Label();
+            this.countSul = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -108,193 +108,229 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Região Sul";
             // 
-            // comboBox1
+            // cboEstados
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(211, 35);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(376, 21);
-            this.comboBox1.TabIndex = 6;
+            this.cboEstados.FormattingEnabled = true;
+            this.cboEstados.Items.AddRange(new object[] {
+            "Acre",
+            "Alagoas",
+            "Amapá",
+            "Amazonas",
+            "Bahia",
+            "Ceará",
+            "Espírito Santo",
+            "Goiás",
+            "Maranhão",
+            "Mato Grosso",
+            "Mato Grosso do Sul",
+            "Minas Gerais",
+            "Pará",
+            "Paraíba",
+            "Paraná",
+            "Pernambuco",
+            "Piauí",
+            "Rio de Janeiro",
+            "Rio Grande do Norte",
+            "Rio Grande do Sul",
+            "Rondônia",
+            "Roraima",
+            "Santa Catarina",
+            "São Paulo",
+            "Sergipe",
+            "Tocantins",
+            "Distrito Federal"});
+            this.cboEstados.Location = new System.Drawing.Point(211, 35);
+            this.cboEstados.Name = "cboEstados";
+            this.cboEstados.Size = new System.Drawing.Size(376, 21);
+            this.cboEstados.TabIndex = 6;
+            this.cboEstados.SelectedIndexChanged += new System.EventHandler(this.cboEstados_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cboNorte
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(211, 108);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(376, 21);
-            this.comboBox2.TabIndex = 7;
+            this.cboNorte.FormattingEnabled = true;
+            this.cboNorte.Items.AddRange(new object[] {
+            "..."});
+            this.cboNorte.Location = new System.Drawing.Point(211, 108);
+            this.cboNorte.Name = "cboNorte";
+            this.cboNorte.Size = new System.Drawing.Size(376, 21);
+            this.cboNorte.TabIndex = 7;
             // 
-            // comboBox3
+            // cboNordeste
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(211, 191);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(376, 21);
-            this.comboBox3.TabIndex = 8;
+            this.cboNordeste.FormattingEnabled = true;
+            this.cboNordeste.Location = new System.Drawing.Point(211, 191);
+            this.cboNordeste.Name = "cboNordeste";
+            this.cboNordeste.Size = new System.Drawing.Size(376, 21);
+            this.cboNordeste.TabIndex = 8;
             // 
-            // comboBox4
+            // cboCentro
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(212, 269);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(375, 21);
-            this.comboBox4.TabIndex = 9;
+            this.cboCentro.FormattingEnabled = true;
+            this.cboCentro.Location = new System.Drawing.Point(212, 269);
+            this.cboCentro.Name = "cboCentro";
+            this.cboCentro.Size = new System.Drawing.Size(375, 21);
+            this.cboCentro.TabIndex = 9;
             // 
-            // comboBox5
+            // cboSudeste
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(211, 360);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(374, 21);
-            this.comboBox5.TabIndex = 10;
+            this.cboSudeste.FormattingEnabled = true;
+            this.cboSudeste.Location = new System.Drawing.Point(211, 360);
+            this.cboSudeste.Name = "cboSudeste";
+            this.cboSudeste.Size = new System.Drawing.Size(374, 21);
+            this.cboSudeste.TabIndex = 10;
             // 
-            // comboBox6
+            // cboSul
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(212, 454);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(375, 21);
-            this.comboBox6.TabIndex = 11;
+            this.cboSul.FormattingEnabled = true;
+            this.cboSul.Location = new System.Drawing.Point(212, 454);
+            this.cboSul.Name = "cboSul";
+            this.cboSul.Size = new System.Drawing.Size(375, 21);
+            this.cboSul.TabIndex = 11;
             // 
-            // button1
+            // btnRemoverAdd
             // 
-            this.button1.Location = new System.Drawing.Point(613, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 37);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRemoverAdd.Location = new System.Drawing.Point(613, 19);
+            this.btnRemoverAdd.Name = "btnRemoverAdd";
+            this.btnRemoverAdd.Size = new System.Drawing.Size(48, 37);
+            this.btnRemoverAdd.TabIndex = 12;
+            this.btnRemoverAdd.Text = "-";
+            this.btnRemoverAdd.UseVisualStyleBackColor = true;
+            this.btnRemoverAdd.Click += new System.EventHandler(this.btnRemoverAdd_Click);
             // 
-            // button2
+            // btnRemoverNorte
             // 
-            this.button2.Location = new System.Drawing.Point(613, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 37);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRemoverNorte.Location = new System.Drawing.Point(613, 92);
+            this.btnRemoverNorte.Name = "btnRemoverNorte";
+            this.btnRemoverNorte.Size = new System.Drawing.Size(48, 37);
+            this.btnRemoverNorte.TabIndex = 13;
+            this.btnRemoverNorte.Text = "-";
+            this.btnRemoverNorte.UseVisualStyleBackColor = true;
+            this.btnRemoverNorte.Click += new System.EventHandler(this.btnRemoverNorte_Click);
             // 
-            // button3
+            // btnRemoverNordeste
             // 
-            this.button3.Location = new System.Drawing.Point(613, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(48, 37);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnRemoverNordeste.Location = new System.Drawing.Point(613, 175);
+            this.btnRemoverNordeste.Name = "btnRemoverNordeste";
+            this.btnRemoverNordeste.Size = new System.Drawing.Size(48, 37);
+            this.btnRemoverNordeste.TabIndex = 14;
+            this.btnRemoverNordeste.Text = "-";
+            this.btnRemoverNordeste.UseVisualStyleBackColor = true;
+            this.btnRemoverNordeste.Click += new System.EventHandler(this.btnRemoverNordeste_Click);
             // 
-            // button4
+            // btnRemoverCentro
             // 
-            this.button4.Location = new System.Drawing.Point(613, 253);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(48, 37);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "-";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRemoverCentro.Location = new System.Drawing.Point(613, 253);
+            this.btnRemoverCentro.Name = "btnRemoverCentro";
+            this.btnRemoverCentro.Size = new System.Drawing.Size(48, 37);
+            this.btnRemoverCentro.TabIndex = 15;
+            this.btnRemoverCentro.Text = "-";
+            this.btnRemoverCentro.UseVisualStyleBackColor = true;
+            this.btnRemoverCentro.Click += new System.EventHandler(this.btnRemoverCentro_Click);
             // 
-            // button5
+            // btnRemoverSudeste
             // 
-            this.button5.Location = new System.Drawing.Point(613, 344);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(48, 37);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "-";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnRemoverSudeste.Location = new System.Drawing.Point(613, 344);
+            this.btnRemoverSudeste.Name = "btnRemoverSudeste";
+            this.btnRemoverSudeste.Size = new System.Drawing.Size(48, 37);
+            this.btnRemoverSudeste.TabIndex = 16;
+            this.btnRemoverSudeste.Text = "-";
+            this.btnRemoverSudeste.UseVisualStyleBackColor = true;
+            this.btnRemoverSudeste.Click += new System.EventHandler(this.btnRemoverSudeste_Click);
             // 
-            // button6
+            // btnRemoverSul
             // 
-            this.button6.Location = new System.Drawing.Point(613, 445);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(48, 37);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "-";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnRemoverSul.Location = new System.Drawing.Point(613, 445);
+            this.btnRemoverSul.Name = "btnRemoverSul";
+            this.btnRemoverSul.Size = new System.Drawing.Size(48, 37);
+            this.btnRemoverSul.TabIndex = 17;
+            this.btnRemoverSul.Text = "-";
+            this.btnRemoverSul.UseVisualStyleBackColor = true;
+            this.btnRemoverSul.Click += new System.EventHandler(this.btnRemoverSul_Click);
             // 
-            // label7
+            // countEstados
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(706, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "label7";
+            this.countEstados.AutoSize = true;
+            this.countEstados.Location = new System.Drawing.Point(706, 35);
+            this.countEstados.Name = "countEstados";
+            this.countEstados.Size = new System.Drawing.Size(35, 13);
+            this.countEstados.TabIndex = 18;
+            this.countEstados.Text = "label7";
             // 
-            // label8
+            // countNorte
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(706, 104);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "label8";
+            this.countNorte.AutoSize = true;
+            this.countNorte.Location = new System.Drawing.Point(706, 104);
+            this.countNorte.Name = "countNorte";
+            this.countNorte.Size = new System.Drawing.Size(35, 13);
+            this.countNorte.TabIndex = 19;
+            this.countNorte.Text = "label8";
             // 
-            // label9
+            // countNordeste
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(706, 187);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "label9";
+            this.countNordeste.AutoSize = true;
+            this.countNordeste.Location = new System.Drawing.Point(706, 187);
+            this.countNordeste.Name = "countNordeste";
+            this.countNordeste.Size = new System.Drawing.Size(35, 13);
+            this.countNordeste.TabIndex = 20;
+            this.countNordeste.Text = "label9";
             // 
-            // label10
+            // countCentroOeste
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(700, 265);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "label10";
+            this.countCentroOeste.AutoSize = true;
+            this.countCentroOeste.Location = new System.Drawing.Point(700, 265);
+            this.countCentroOeste.Name = "countCentroOeste";
+            this.countCentroOeste.Size = new System.Drawing.Size(41, 13);
+            this.countCentroOeste.TabIndex = 21;
+            this.countCentroOeste.Text = "label10";
             // 
-            // label11
+            // countSudeste
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(700, 356);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "label11";
+            this.countSudeste.AutoSize = true;
+            this.countSudeste.Location = new System.Drawing.Point(700, 356);
+            this.countSudeste.Name = "countSudeste";
+            this.countSudeste.Size = new System.Drawing.Size(41, 13);
+            this.countSudeste.TabIndex = 22;
+            this.countSudeste.Text = "label11";
             // 
-            // label12
+            // countSul
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(700, 457);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "label12";
+            this.countSul.AutoSize = true;
+            this.countSul.Location = new System.Drawing.Point(700, 457);
+            this.countSul.Name = "countSul";
+            this.countSul.Size = new System.Drawing.Size(41, 13);
+            this.countSul.TabIndex = 23;
+            this.countSul.Text = "label12";
             // 
-            // Form1
+            // countCentro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 604);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.countSul);
+            this.Controls.Add(this.countSudeste);
+            this.Controls.Add(this.countCentroOeste);
+            this.Controls.Add(this.countNordeste);
+            this.Controls.Add(this.countNorte);
+            this.Controls.Add(this.countEstados);
+            this.Controls.Add(this.btnRemoverSul);
+            this.Controls.Add(this.btnRemoverSudeste);
+            this.Controls.Add(this.btnRemoverCentro);
+            this.Controls.Add(this.btnRemoverNordeste);
+            this.Controls.Add(this.btnRemoverNorte);
+            this.Controls.Add(this.btnRemoverAdd);
+            this.Controls.Add(this.cboSul);
+            this.Controls.Add(this.cboSudeste);
+            this.Controls.Add(this.cboCentro);
+            this.Controls.Add(this.cboNordeste);
+            this.Controls.Add(this.cboNorte);
+            this.Controls.Add(this.cboEstados);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "countCentro";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -309,24 +345,24 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cboEstados;
+        private System.Windows.Forms.ComboBox cboNorte;
+        private System.Windows.Forms.ComboBox cboNordeste;
+        private System.Windows.Forms.ComboBox cboCentro;
+        private System.Windows.Forms.ComboBox cboSudeste;
+        private System.Windows.Forms.ComboBox cboSul;
+        private System.Windows.Forms.Button btnRemoverAdd;
+        private System.Windows.Forms.Button btnRemoverNorte;
+        private System.Windows.Forms.Button btnRemoverNordeste;
+        private System.Windows.Forms.Button btnRemoverCentro;
+        private System.Windows.Forms.Button btnRemoverSudeste;
+        private System.Windows.Forms.Button btnRemoverSul;
+        private System.Windows.Forms.Label countEstados;
+        private System.Windows.Forms.Label countNorte;
+        private System.Windows.Forms.Label countNordeste;
+        private System.Windows.Forms.Label countCentroOeste;
+        private System.Windows.Forms.Label countSudeste;
+        private System.Windows.Forms.Label countSul;
     }
 }
 
